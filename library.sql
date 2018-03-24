@@ -33,17 +33,15 @@ CREATE TABLE `book` (
   `name` varchar(25) NOT NULL,
   `isbn` int(15) NOT NULL,
   `bookid` int(15) NOT NULL,
-  `doiss` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `doret` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `book`
 --
 
-INSERT INTO `book` (`author`, `name`, `isbn`, `bookid`, `doiss`, `doret`) VALUES
-('Dhiraj Mehta', 'Secret of coding', 123, 123456, '2018-03-23 18:30:00', '0000-00-00'),
-('SIES', 'Way to success', 456, 456789, '2018-03-24 10:32:04', '0000-00-00');
+INSERT INTO `book` (`author`, `name`, `isbn`, `bookid`) VALUES
+('Dhiraj Mehta', 'Secret of coding', 123, 123456),
+('SIES', 'Way to success', 456, 456789);
 
 -- --------------------------------------------------------
 
