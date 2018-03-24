@@ -103,7 +103,7 @@
 						$res = mysqli_query($dbconn,$sql);
 						$count = mysqli_num_rows($res);
 						if($count>=3){
-							echo "<script>alert('CANNOT ISSUE MORE THAN THREE BOOKS')</script></h4>";
+							echo "<script>alert('CANNOT  ISSUE  MORE  THAN  THREE  BOOKS')</script></h4>";
 						}else{
 							$sqlInsert = "INSERT INTO issue (prn, bookid, issuedate, returndate) VALUES ('$prn', $book, Curdate(), '$returndate')";
 							$res = mysqli_query($dbconn,$sqlInsert);
